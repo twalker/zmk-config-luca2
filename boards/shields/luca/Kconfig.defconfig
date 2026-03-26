@@ -1,0 +1,16 @@
+if SHIELD_LUCA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "luca"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif # SHIELD_LUCA_LEFT
+
+if SHIELD_LUCA_LEFT || SHIELD_LUCA_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif # SHIELD_LUCA_LEFT || SHIELD_LUCA_RIGHT

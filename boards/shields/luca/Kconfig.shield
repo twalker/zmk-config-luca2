@@ -1,0 +1,5 @@
+config SHIELD_LUCA_LEFT
+    def_bool $(shields_list_contains,luca_left)
+
+config SHIELD_LUCA_RIGHT
+    def_bool $(shields_list_contains,luca_right)
